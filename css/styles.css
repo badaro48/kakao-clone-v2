@@ -1,0 +1,24 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+
+* {
+  /*padding을 추가해도 box size는 크게만들지 말아줘*/
+  /*이 부분을 빼면 화면 하단 nav bar 의 아이콘이 3개만 보임*/
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: inherit;
+}
