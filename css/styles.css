@@ -9,6 +9,8 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
+@import "mobile.css";
+
 * {
   /*padding을 추가해도 box size는 크게만들지 말아줘*/
   /*이 부분을 빼면 화면 하단 nav bar 의 아이콘이 3개만 보임*/
@@ -25,4 +27,20 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* 페이지가 시작될때 아래에서 위쪽으로 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-in-out;
 }
